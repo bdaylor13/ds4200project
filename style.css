@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, serif;
+}
+nav {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #00A699;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a,
+.nav-menu a:visited,
+.nav-menu a:hover
+.nav-menu a:active {
+    color: #00A699;
+}
+
+.nav-menu a.active {
+    font-weight: bold;
+}
+
+.headers {
+    text-align: center;
+    color: #FF5A5F;
+}
+
+
+h1 {
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin: .1;
+}
+
+h2 {
+    font-weight: 100;
+    margin: 0;
+}
