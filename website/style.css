@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav {
     background-color: #f8f9fa;
@@ -30,18 +30,67 @@ nav {
 }
 
 .headers {
-    text-align: center;
     color: #FF5A5F;
+    text-align: center;
 }
 
 
 h1 {
     letter-spacing: 3px;
-    font-weight: 300;
+    font-weight: bold;
     margin: .1;
 }
 
 h2 {
-    font-weight: 100;
-    margin: 0;
+    font-weight: normal;
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.left-image {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.right-text {
+  flex: 1;
+}
+
+.right-image {
+  width: 50%;
+  margin-left: 20px; 
+  float: right;
+}
+
+.left-text {
+  flex: 1;
+}
+
+
+h3 {
+    font-weight: 85;
+    font-weight: bold;
+
+}
+
+p {
+    color: #484848;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+.large-list {
+  font-size: 25px;
+  letter-spacing: 2;
+  list-style: none;
+}
+
+a {
+    color:#FC642D
 }
