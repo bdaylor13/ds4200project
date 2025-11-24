@@ -75,14 +75,25 @@ h3 {
     font-weight: 85;
     font-weight: bold;
 
+
 }
 
 p {
     color: #484848;
 }
 
+li, ul {
+  color: #484848;
+}
+
 hr {
     margin: 40px 0;
+}
+
+.short-hr {
+  width : 90%;
+  border: 1px solid #ccc;
+  margin: 20px auto;
 }
 
 .large-list {
@@ -94,3 +105,31 @@ hr {
 a {
     color:#FC642D
 }
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    width: 90%;
+}
+
+/* Target the actual Vega embed elements */
+.chart-container > div {
+    margin: 0 auto;
+}
+
+/* Text content styling */
+.text-content {
+    width: 90%;
+    margin: 30px auto;
+    padding: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.left-header {
+  color: #00A699;
+  text-align: left;
+}
+

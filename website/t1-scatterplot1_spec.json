@@ -1,0 +1,233 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-483a6e5c5271598e8d6b63f2aa20b62b"
+  },
+  "datasets": {
+    "data-483a6e5c5271598e8d6b63f2aa20b62b": [
+      {
+        "estimated_occupancy_l365d": 147.64634146341464,
+        "estimated_revenue_l365d": 18537.0,
+        "neighbourhood_cleansed": "Allston",
+        "price": 121.0
+      },
+      {
+        "estimated_occupancy_l365d": 114.27918781725889,
+        "estimated_revenue_l365d": 21675.0,
+        "neighbourhood_cleansed": "Back Bay",
+        "price": 225.0
+      },
+      {
+        "estimated_occupancy_l365d": 95.42857142857143,
+        "estimated_revenue_l365d": 6138.0,
+        "neighbourhood_cleansed": "Bay Village",
+        "price": 126.0
+      },
+      {
+        "estimated_occupancy_l365d": 127.66917293233082,
+        "estimated_revenue_l365d": 20880.0,
+        "neighbourhood_cleansed": "Beacon Hill",
+        "price": 167.0
+      },
+      {
+        "estimated_occupancy_l365d": 133.98333333333332,
+        "estimated_revenue_l365d": 14220.0,
+        "neighbourhood_cleansed": "Brighton",
+        "price": 141.5
+      },
+      {
+        "estimated_occupancy_l365d": 85.32142857142857,
+        "estimated_revenue_l365d": 12012.0,
+        "neighbourhood_cleansed": "Charlestown",
+        "price": 253.0
+      },
+      {
+        "estimated_occupancy_l365d": 157.23076923076923,
+        "estimated_revenue_l365d": 50235.0,
+        "neighbourhood_cleansed": "Chinatown",
+        "price": 279.0
+      },
+      {
+        "estimated_occupancy_l365d": 106.94946808510639,
+        "estimated_revenue_l365d": 9396.0,
+        "neighbourhood_cleansed": "Dorchester",
+        "price": 109.5
+      },
+      {
+        "estimated_occupancy_l365d": 159.2468085106383,
+        "estimated_revenue_l365d": 45570.0,
+        "neighbourhood_cleansed": "Downtown",
+        "price": 274.0
+      },
+      {
+        "estimated_occupancy_l365d": 140.92727272727274,
+        "estimated_revenue_l365d": 19890.0,
+        "neighbourhood_cleansed": "East Boston",
+        "price": 190.0
+      },
+      {
+        "estimated_occupancy_l365d": 124.75816993464052,
+        "estimated_revenue_l365d": 20864.0,
+        "neighbourhood_cleansed": "Fenway",
+        "price": 224.0
+      },
+      {
+        "estimated_occupancy_l365d": 100.01851851851852,
+        "estimated_revenue_l365d": 9232.0,
+        "neighbourhood_cleansed": "Hyde Park",
+        "price": 132.5
+      },
+      {
+        "estimated_occupancy_l365d": 112.2751677852349,
+        "estimated_revenue_l365d": 18540.0,
+        "neighbourhood_cleansed": "Jamaica Plain",
+        "price": 192.0
+      },
+      {
+        "estimated_occupancy_l365d": 0.0,
+        "estimated_revenue_l365d": 0.0,
+        "neighbourhood_cleansed": "Leather District",
+        "price": 165.0
+      },
+      {
+        "estimated_occupancy_l365d": 83.4,
+        "estimated_revenue_l365d": 11352.0,
+        "neighbourhood_cleansed": "Longwood Medical Area",
+        "price": 473.0
+      },
+      {
+        "estimated_occupancy_l365d": 61.407407407407405,
+        "estimated_revenue_l365d": 4245.0,
+        "neighbourhood_cleansed": "Mattapan",
+        "price": 118.0
+      },
+      {
+        "estimated_occupancy_l365d": 123.96153846153847,
+        "estimated_revenue_l365d": 18234.0,
+        "neighbourhood_cleansed": "Mission Hill",
+        "price": 150.0
+      },
+      {
+        "estimated_occupancy_l365d": 125.73529411764706,
+        "estimated_revenue_l365d": 22569.0,
+        "neighbourhood_cleansed": "North End",
+        "price": 247.0
+      },
+      {
+        "estimated_occupancy_l365d": 117.1358024691358,
+        "estimated_revenue_l365d": 11948.0,
+        "neighbourhood_cleansed": "Roslindale",
+        "price": 149.0
+      },
+      {
+        "estimated_occupancy_l365d": 114.9047619047619,
+        "estimated_revenue_l365d": 10470.0,
+        "neighbourhood_cleansed": "Roxbury",
+        "price": 145.5
+      },
+      {
+        "estimated_occupancy_l365d": 108.11764705882354,
+        "estimated_revenue_l365d": 13104.0,
+        "neighbourhood_cleansed": "South Boston",
+        "price": 207.0
+      },
+      {
+        "estimated_occupancy_l365d": 67.25,
+        "estimated_revenue_l365d": 8844.0,
+        "neighbourhood_cleansed": "South Boston Waterfront",
+        "price": 353.0
+      },
+      {
+        "estimated_occupancy_l365d": 109.57232704402516,
+        "estimated_revenue_l365d": 18752.0,
+        "neighbourhood_cleansed": "South End",
+        "price": 219.0
+      },
+      {
+        "estimated_occupancy_l365d": 138.66666666666666,
+        "estimated_revenue_l365d": 28050.0,
+        "neighbourhood_cleansed": "West End",
+        "price": 271.0
+      },
+      {
+        "estimated_occupancy_l365d": 101.56140350877193,
+        "estimated_revenue_l365d": 9264.0,
+        "neighbourhood_cleansed": "West Roxbury",
+        "price": 112.0
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "neighbourhood_cleansed",
+      "legend": null,
+      "title": "Neighborhood",
+      "type": "nominal"
+    },
+    "size": {
+      "field": "estimated_occupancy_l365d",
+      "scale": {
+        "range": [
+          100,
+          2000
+        ]
+      },
+      "title": "Average Occupancy (Last 365 Days)",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "neighbourhood_cleansed",
+        "title": "Neighborhood",
+        "type": "nominal"
+      },
+      {
+        "field": "price",
+        "format": "$.2f",
+        "title": "Median Price",
+        "type": "quantitative"
+      },
+      {
+        "field": "estimated_revenue_l365d",
+        "format": "$,.0f",
+        "title": "Median Revenue (Last 365 Days)",
+        "type": "quantitative"
+      },
+      {
+        "field": "estimated_occupancy_l365d",
+        "title": "Mean Estimated Occupancy (Last 365 Days)",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "price",
+      "scale": {
+        "domain": [
+          0,
+          500
+        ]
+      },
+      "title": "Median Price per Night ($)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "estimated_revenue_l365d",
+      "title": "Median Estimated Revenue (Last 365 Days)",
+      "type": "quantitative"
+    }
+  },
+  "height": 600,
+  "mark": {
+    "opacity": 0.8,
+    "size": 200,
+    "type": "circle"
+  },
+  "title": "Median Price vs Revenue by Neighborhood",
+  "width": "container"
+}

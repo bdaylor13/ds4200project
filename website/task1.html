@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> DS4200 Final Project Website </title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 
 <body>
@@ -24,3 +28,85 @@
         <h1 class="headers">TASK 1</h1>
         <h2 class="headers">What pricing strategies lead to higher booking rates?</h2>
     </div>
+
+    <hr>
+
+    <h3 class="left-header">Exploring the relationship between pricing and revenue across neighborhoods...</h3>
+
+    <div id="vis1" class="chart-container"></div>
+    
+    <div class="text-content">
+        <p><b>Design: </b>This scatterplot compares the median price versus median revenue amongst
+            airbnbs in Boston grouped by their neighborhood. Each point (or color) represents a different 
+            neighboorhood, with it's size representing the average occupancy rates for airbnbs in 
+            that given neighboorhood over the last 365 days. The plot contains a hover interaction,
+            where each point contains information on the neighboorhood name, median price, median
+            revenue (l365d) and median estimated occupancy (l365d).
+
+        </p>
+        <p><b>Takeaways: </b>
+        <ul>
+            <li><b>Clear correlation between </b></li>
+            <li><b>The $275-300 range acheives highest booking rates: </b>
+            The largest points indicate the highest occupancies, indicating that this range of pricing seems to be the 
+            high-demand price point where listings may be more likely to stay booked.</li>
+            <li><b>The $150-250 ranges seems to be a "safe zone":</b>
+            The listings in this range seem to achieve consistent booking rates, with bubbles in this range being medium to
+            large in size.</li>
+            <li><b>Very high pricing ($350 +) seems to limit bookings:</b> 
+            The smaller two right-most bubbles indicate that neighborhoods with very high pricing may lead to
+            reduced occupancy rates.</li>
+
+        </ul>
+        </p>
+    </div>
+
+    <hr class="short-hr">
+
+    <h3 class="left-header">Looking at the same relationship within the neighborhoods...</h3>
+
+    <div id="vis2" class="chart-container"></div>
+    
+    
+    <div class="text-content">
+        <p><b>Design: </b>This scatterplot compares the price per night versus estimated revenue in the last 365
+            days for individual airbnb listings. A selector located at the bottom of the visual allows the user to
+            select the neighborhood to display, with all listings on the plot belonging to that selected neighborhood.
+            The color of the listing represents the estimated occupancy rate for that listing over the 
+            last 365 days, with darker colors indicating higher rates. 
+
+        </p>
+        <p><b>Takeaways: </b></p>
+        <ul>
+            <li><b>High occupancy drives high revenue</b><br>
+            The darkest points (highest occupancy rates) consistently appear at the top 
+            of the chart (highest revenue), indicating that maximizing booking rates is 
+            key to maximizing revenue regardless of price point.</li>
+            <li><b>Lower prices -> higher booking rates:</b>
+            The darker colors on the left hand side of the visuals for most neighborhoods
+            indicate that listings with lower prices tend to achieve higher occupancy rates.</li>
+            <li><b>Higher prices -> lower booking rates:</b>
+            As you move right across the plot, the points get lighter, indicating that premium
+            pricing significantly reduces occupancy in many cases.</li>
+            <li><b>A tradeoff exists:</b> 
+            While there seems to be a clear inverse relationship between pricing and occupancy, 
+            pricing and revenue seem to have a positive relationship. That is, there is a tradeoff
+            that hosts must face when it comes to pricing. They must choose between wanting to mazimize
+            occupancy versus maximizing revenue per booking. </li></ul>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+    // Load first chart
+    fetch('t1-scatterplot1_spec.json')
+        .then(res => res.json())
+        .then(spec => vegaEmbed('#vis1', spec));
+    
+    // Load second chart
+    fetch('t1-scatterplot2_spec.json')
+        .then(res => res.json())
+        .then(spec => vegaEmbed('#vis2', spec));
+    </script>
