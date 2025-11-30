@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> DS4200 Final Project Website </title>
+    <title>DS4200 Final Project – Task 3</title>
+
+    <!-- Your CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- D3 Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <style>
+        /* Tooltip styling (you can move this to your CSS file) */
+        #tooltip {
+            position: absolute;
+            display: none;
+            padding: 8px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
 
 <body>
-        <nav>
+    <nav>
         <ul class="nav-menu">
             <li><a href="cover_page.html">Home</a></li>
             <li><a href="task1.html">Task 1</a></li>
@@ -25,3 +45,15 @@
         <h1 class="headers">TASK 3</h1>
         <h2 class="headers">Do professional hosts (multiple listings) outperform individual hosts?</h2>
     </div>
+
+    <!-- Scatterplot container -->
+    <div id="scatter" style="margin-left: 40px;"></div>
+
+    <!-- Tooltip -->
+    <div id="tooltip"></div>
+
+    <!-- Your JavaScript file -->
+    <script src="task3_scatter.js"></script>
+</body>
+
+</html>
