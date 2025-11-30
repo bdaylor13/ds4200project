@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> DS4200 Final Project Website </title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 
 <body>
-        <nav>
+    <nav>
         <ul class="nav-menu">
             <li><a href="cover_page.html">Home</a></li>
             <li><a href="task1.html">Task 1</a></li>
@@ -24,4 +28,44 @@
     <div>
         <h1 class="headers">TASK 5</h1>
         <h2 class="headers">How does licensing affect market dynamics?</h2>
+
+        <div id="vis1" class="chart-container"></div>
+        <div class="text-content">
+        <p><b>Design: </b>These side-by-side bar charts visualize the relationship between licensing status and market dynamics. 
+            The left chart compares the <b>count of listings</b>, showing the proportion of licensed (1) versus unlicensed/exempt (0) properties. 
+            The right chart compares the <b>average price</b> between these two groups.
+        </p>
+        <p><b>Takeaways: </b></p>
+        <ul>
+            <li><b>Licensing is the Market Standard:</b><br>
+            The number of licensed listings (orange) is more than double that of unlicensed ones (blue). 
+            This indicates that obtaining a license is the norm in the Boston market, with the majority of hosts operating within the official framework.</li>
+            
+           
+            <li><b>The Price of Reliability:</b><br>
+            Licensed properties have a significantly higher average price (~$245) compared to unlicensed ones (~$170). 
+            This premium likely reflects the operational costs of compliance (fees, safety standards) as well as the added value of reliability and trust associated with licensed rentals.</li>
+            
+            <li><b>Affordability of Unlicensed Options:</b><br>
+            Unlicensed (or exempt) listings, while fewer in number, offer a considerably lower price point. 
+            These properties serve as a more affordable alternative for budget-conscious travelers in the Boston area.</li>
+
+            <li><b>Neighborhood Exceptions & Extremes:</b><br>
+            However, there are notable outliers. 
+            <b>Beacon Hill, West End, and Chinatown</b> show a reverse trend where unlicensed listings outnumber licensed ones. 
+            More extremely, the <b>Leather District</b> is entirely unlicensed (100%), while the <b>Longwood Medical Area</b> is entirely licensed (100%). 
+            This suggests that specific neighborhoods operate under completely different rules or demands compared to the city average.</li>
+            
+        </ul>
+
+
     </div>
+
+    <script type="text/javascript">
+    
+    fetch('t5-barplot1_spec.json')
+        .then(res => res.json())
+        .then(spec => vegaEmbed('#vis1', spec))
+        .catch(console.error);
+
+    </script>

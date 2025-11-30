@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> DS4200 Final Project Website </title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 
 <body>
@@ -24,4 +28,64 @@
     <div>
         <h1 class="headers">TASK 4</h1>
         <h2 class="headers">What's the relationship between minimum nights and occupancy?</h2>
+
+        <div id="vis1" class="chart-container"></div>
+
+        <div class="text-content">
+        <p><b>Design: </b>This stacked histogram displays the distribution of "Minimum Nights" settings across listings, 
+            specifically zoomed in on short-term requirements (1-15 nights). The x-axis represents the minimum nights 
+            required by the host, while the y-axis shows the number of listings. The color represents the 
+            availability level over the last 365 days, with lighter green indicating high availability (often professional listings) 
+            and dark blue indicating low availability.
+        </p>
+        <p><b>Takeaways: </b>
+        <ul>
+            <li><b>The "1-2 Night" Standard: </b>
+            The overwhelming majority of listings set their minimum stay to just 1 or 2 nights. This suggests that 
+            most hosts prioritize flexibility to capture maximum demand from weekenders and short-term tourists.</li>
+            <li><b>Avoidance of the "Middle Ground":</b>
+            There is a significant drop-off in listings requiring 4 to 14 nights. This duration is often too long 
+            for tourists yet too short for temporary residents, making it a less attractive strategy for hosts.</li>
+        </ul>
+        </p>
     </div>
+
+    <hr class="short-hr">
+
+    <h3 class="left-header">The impact of regulations on long-term stays...</h3>
+
+    <div id="vis2" class="chart-container"></div>
+    
+    <div class="text-content">
+        <p><b>Design: </b>This chart focuses on the distribution of listings with longer minimum stay requirements 
+            (28 to 60 nights). It highlights how regulatory definitions influence host behavior.
+        </p>
+        <p><b>Takeaways: </b></p>
+        <ul>
+            <li><b>The "30-Night" Regulatory Wall:</b><br>
+            A massive spike is visible exactly at the 30-night mark. This is a direct response to Boston's 
+            short-term rental regulations. By requiring a minimum of 30 days, hosts can bypass strict "under 28 days" 
+            rules, taxes, and registration requirements, effectively operating as monthly rentals instead.</li>
+            <li><b>Polarized Professionalism:</b>
+            The "Very High" availability listings (light green) are clustered at the extremes: either 1-2 nights 
+            or 30+ nights. Investors and professional hosts tend to choose either full compliance for short-term stays 
+            or the regulatory safety of monthly leases, avoiding the complex zone in between.</li>
+        </ul>
+
+    </div>
+
+        <div id="vis2" class="chart-container"></div>
+    </div>
+
+    <script type="text/javascript">
+    
+    fetch('t4-barplot1_spec.json')
+        .then(res => res.json())
+        .then(spec => vegaEmbed('#vis1', spec))
+        .catch(console.error);
+
+    fetch('t4-barplot2_spec.json')
+        .then(res => res.json())
+        .then(spec => vegaEmbed('#vis2', spec))
+        .catch(console.error);
+    </script>
