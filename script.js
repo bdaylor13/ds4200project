@@ -1,25 +1,27 @@
-// D3 Script for Airbnb Scatterplot + Boxplots
+// Cleaned-up D3 Script for Airbnb Scatterplot Only
 
-// SVG Sizes and Margins (improved for label alignment)
-const scatterMargin = { top: 50, right: 50, bottom: 70, left: 70 };
-const scatterWidth = 900;
-const scatterHeight = 500;
+const scatterMargin = { top: 60, right: 30, bottom: 60, left: 70 };
+const scatterWidth = 800;
+const scatterHeight = 450;
 
-const boxMargin = { top: 50, right: 50, bottom: 90, left: 70 };
-const boxWidth = 900;
-const boxHeight = 420; // Increased to avoid cut-off labels
-
-// Tooltip
 const tooltip = d3.select("#tooltip");
 
-// Load CSV
-Promise.all([
-  d3.csv("cleaned_listings.csv", d3.autoType)
-]).then(([data]) => {
+d3.csv("cleaned_listings.csv", d3.autoType).then(data => {
+  // Keep only rows with all required fields
+  data = data.filter(d =>
+    d.calculated_host_listings_count != null &&
+    d.review_scores_rating != null &&
+    d.estimated_revenue_l365d != null &&
+    d.host_is_superhost != null
+  );
 
-  // ==============================
-  // SCATTERPLOT CANVAS
-  // ==============================
+  // Remove extreme x outliers (e.g., > 150 listings) for clearer view
+  const xUpper = d3.quantile(
+    data.map(d => d.calculated_host_listings_count).sort(d3.ascending),
+    0.98
+  );
+  data = data.filter(d => d.calculated_host_listings_count <= xUpper);
+
   const scatterSvg = d3.select("#scatter")
     .append("svg")
     .attr("width", scatterWidth + scatterMargin.left + scatterMargin.right)
@@ -27,37 +29,72 @@ Promise.all([
     .append("g")
     .attr("transform", `translate(${scatterMargin.left},${scatterMargin.top})`);
 
-  // Scales
+  // X scale with padding
+  const xDomain = d3.extent(data, d => d.calculated_host_listings_count);
   const xScatter = d3.scaleLinear()
-    .domain(d3.extent(data, d => d.calculated_host_listings_count))
+    .domain([0, xDomain[1] * 1.05])
+    .nice()
     .range([0, scatterWidth]);
 
+  // Y scale focused on typical ratings (0–5 or data range)
+  const yDomain = d3.extent(data, d => d.review_scores_rating);
   const yScatter = d3.scaleLinear()
-    .domain(d3.extent(data, d => d.review_scores_rating))
+    .domain([Math.max(0, yDomain[0] - 0.2), Math.min(5, yDomain[1] + 0.2)])
+    .nice()
     .range([scatterHeight, 0]);
 
+  // Bubble size (slightly smaller range)
+  const sizeDomain = d3.extent(data, d => d.estimated_revenue_l365d);
   const sizeScatter = d3.scaleSqrt()
-    .domain([0, d3.max(data, d => d.estimated_revenue_l365d)])
-    .range([2, 18]);
+    .domain([Math.max(0, sizeDomain[0]), sizeDomain[1]])
+    .range([2, 10]);
 
   const colorScatter = d3.scaleOrdinal()
     .domain(["t", "f"])
     .range(["#f5a623", "#4f81bd"]);
 
-  // Axes
+  // X axis + gridlines
+  const xAxis = d3.axisBottom(xScatter).ticks(8);
+  const xGrid = d3.axisBottom(xScatter)
+    .ticks(8)
+    .tickSize(-scatterHeight)
+    .tickFormat("");
+
+  scatterSvg.append("g")
+    .attr("class", "grid")
+    .attr("transform", `translate(0,${scatterHeight})`)
+    .call(xGrid)
+    .selectAll("line")
+    .attr("stroke", "#e0e0e0");
+
   scatterSvg.append("g")
     .attr("transform", `translate(0,${scatterHeight})`)
-    .call(d3.axisBottom(xScatter));
+    .call(xAxis)
+    .call(g => g.selectAll("text").style("font-size", "11px"));
+
+  // Y axis + gridlines
+  const yAxis = d3.axisLeft(yScatter).ticks(7);
+  const yGrid = d3.axisLeft(yScatter)
+    .ticks(7)
+    .tickSize(-scatterWidth)
+    .tickFormat("");
 
   scatterSvg.append("g")
-    .call(d3.axisLeft(yScatter));
+    .attr("class", "grid")
+    .call(yGrid)
+    .selectAll("line")
+    .attr("stroke", "#e0e0e0");
 
-  // Axis Labels
+  scatterSvg.append("g")
+    .call(yAxis)
+    .call(g => g.selectAll("text").style("font-size", "11px"));
+
+  // Axis labels
   scatterSvg.append("text")
     .attr("x", scatterWidth / 2)
-    .attr("y", scatterHeight + 50)
+    .attr("y", scatterHeight + 45)
     .attr("text-anchor", "middle")
-    .style("font-size", "15px")
+    .style("font-size", "14px")
     .text("Host Total Listings Count");
 
   scatterSvg.append("text")
@@ -65,8 +102,17 @@ Promise.all([
     .attr("x", -scatterHeight / 2)
     .attr("y", -50)
     .attr("text-anchor", "middle")
-    .style("font-size", "15px")
+    .style("font-size", "14px")
     .text("Average Review Score Rating");
+
+  // Smaller, tighter title
+  scatterSvg.append("text")
+    .attr("x", 0)
+    .attr("y", -10)
+    .attr("text-anchor", "start")
+    .style("font-size", "16px")
+    .style("font-weight", "600")
+    .text("Rating vs Host Listings (Bubble = Revenue)");
 
   // Points
   scatterSvg.selectAll("circle")
@@ -77,144 +123,103 @@ Promise.all([
     .attr("cy", d => yScatter(d.review_scores_rating))
     .attr("r", d => sizeScatter(d.estimated_revenue_l365d))
     .attr("fill", d => colorScatter(d.host_is_superhost))
-    .attr("opacity", 0.75)
+    .attr("opacity", 0.65)
+    .attr("stroke", "white")
+    .attr("stroke-width", 0.5)
     .on("mouseover", (event, d) => {
-      tooltip.style("display", "block")
-        .html(`Host Listings: ${d.calculated_host_listings_count}<br>
-               Rating: ${d.review_scores_rating}<br>
-               Revenue (365d): $${d.estimated_revenue_l365d}<br>
-               Superhost: ${d.host_is_superhost}`)
+      tooltip
+        .style("display", "block")
+        .html(`
+          <strong>Host Listings:</strong> ${d.calculated_host_listings_count}<br>
+          <strong>Rating:</strong> ${d.review_scores_rating}<br>
+          <strong>Revenue (365d):</strong> $${d3.format(",.0f")(d.estimated_revenue_l365d)}<br>
+          <strong>Superhost:</strong> ${d.host_is_superhost === "t" ? "Yes" : "No"}
+        `)
+        .style("left", event.pageX + 15 + "px")
+        .style("top", event.pageY + "px");
+    })
+    .on("mousemove", (event) => {
+      tooltip
         .style("left", event.pageX + 15 + "px")
         .style("top", event.pageY + "px");
     })
     .on("mouseout", () => tooltip.style("display", "none"));
 
-  // Legend
-  const legend = scatterSvg.append("g")
-    .attr("transform", "translate(20, -20)");
+    // Compact legend positioned a bit farther right & up
+const legend = scatterSvg.append("g")
+  .attr("transform", `translate(${scatterWidth - 220}, 0)`);
 
-  ["t", "f"].forEach((val, i) => {
-    legend.append("circle")
-      .attr("cx", 350)
-      .attr("cy", i * 20 - 4)
-      .attr("r", 6)
-      .attr("fill", colorScatter(val));
+// SECTION 1: Superhost color legend (left column)
+const legendSuper = legend.append("g");
 
-    legend.append("text")
-      .attr("x", 365)
-      .attr("y", i * 20 )
-      .style("font-size", "13px")
-      .text(`Superhost = ${val === "t" ? "true" : "false"}`);
-  });
+legendSuper.append("text")
+  .attr("x", 0)
+  .attr("y", -45)
+  .style("font-size", "12px")
+  .style("font-weight", "600")
+  .text("Superhost");
 
-
-// ==============================
-// BOXPLOTS CANVAS - FIXED VERSION
-// ==============================
-const boxSvg = d3.select("#boxplots")
-  .append("svg")
-  .attr("width", boxWidth + boxMargin.left + boxMargin.right)
-  .attr("height", boxHeight + boxMargin.top + boxMargin.bottom)
-  .append("g")
-  .attr("transform", `translate(${boxMargin.left},${boxMargin.top})`);
-
-const metrics = [
-  { key: "estimated_revenue_l365d", label: "Revenue (365d)" },
-  { key: "review_scores_rating", label: "Review Score Rating" },
-  { key: "estimated_occupancy_l365d", label: "Occupancy (365d)" }
+const legendItems = [
+  { val: "t", label: "Yes" },
+  { val: "f", label: "No" }
 ];
 
-const groups = ["t", "f"];
+legendItems.forEach((item, i) => {
+  const y = -30 + i * 18;
+  legendSuper.append("circle")
+    .attr("cx", 4)
+    .attr("cy", y)
+    .attr("r", 5)
+    .attr("fill", colorScatter(item.val))
+    .attr("opacity", 0.9);
 
-const xMetric = d3.scaleBand()
-  .domain(metrics.map(m => m.label))
-  .range([0, boxWidth])
-  .padding(0.25);
+  legendSuper.append("text")
+    .attr("x", 16)
+    .attr("y", y + 3)
+    .style("font-size", "11px")
+    .text(item.label);
+});
 
-const xGroup = d3.scaleBand()
-  .domain(groups)
-  .range([0, xMetric.bandwidth()])
-  .padding(0.2);
+// SECTION 2: Revenue size legend (right column, same baseline)
+const legendSize = legend.append("g")
+  .attr("transform", "translate(90, 0)");
 
-// Draw main X-axis
-boxSvg.append("g")
-  .attr("transform", `translate(0,${boxHeight})`)
-  .call(d3.axisBottom(xMetric))
-  .selectAll("text")
-  .style("text-anchor", "middle")
-  .style("font-size", "14px");
+legendSize.append("text")
+  .attr("x", 0)
+  .attr("y", -45)
+  .style("font-size", "12px")
+  .style("font-weight", "600")
+  .text("Revenue (365d)");
 
-// X Label
-boxSvg.append("text")
-  .attr("x", boxWidth / 2)
-  .attr("y", boxHeight + 55)
-  .attr("text-anchor", "middle")
-  .style("font-size", "16px")
-  .text("Metrics by Superhost Status");
+// pick nicer rounded size ticks
+const sizeValues = [
+  d3.quantile(sizeDomain, 0.25),
+  d3.quantile(sizeDomain, 0.5),
+  d3.quantile(sizeDomain, 0.9)
+];
 
-// Create metric groups
-metrics.forEach(metric => {
-  const metricGroup = boxSvg.append("g")
-    .attr("transform", `translate(${xMetric(metric.label)},0)`);
+const xStart = 10;
 
-  const metricValues = data.map(d => d[metric.key]).filter(d => d !== null);
-  const y = d3.scaleLinear()
-    .domain([d3.min(metricValues), d3.max(metricValues)])
-    .nice()
-    .range([boxHeight, 0]);
+sizeValues.forEach((val, i) => {
+  const r = sizeScatter(val);
+  const cx = xStart + i * 40;   // horizontal layout
+  const cy = -25;
 
-  // Left axis + gridlines for each metric
-  metricGroup.append("g")
-    .call(d3.axisLeft(y)
-      .ticks(5)
-      .tickSize(-xMetric.bandwidth())
-    )
-    .selectAll("text")
-    .style("font-size", "12px");
+  legendSize.append("circle")
+    .attr("cx", cx)
+    .attr("cy", cy)
+    .attr("r", r)
+    .attr("fill", "#ffffff")
+    .attr("stroke", "#777")
+    .attr("opacity", 0.9);
 
-  groups.forEach(group => {
-    const groupData = data.filter(d => d.host_is_superhost === group)
-      .map(d => d[metric.key])
-      .sort(d3.ascending);
+  legendSize.append("text")
+    .attr("x", cx)
+    .attr("y", cy + r + 11)
+    .attr("text-anchor", "middle")
+    .style("font-size", "10px")
+    .text(`$${d3.format(".2s")(val)}`);
+});
 
-    if (groupData.length < 4) return;
-
-    const q1 = d3.quantile(groupData, 0.25);
-    const q2 = d3.quantile(groupData, 0.50);
-    const q3 = d3.quantile(groupData, 0.75);
-    const min = groupData[0];
-    const max = groupData[groupData.length - 1];
-
-    const xPos = xGroup(group);
-
-    // Box
-    metricGroup.append("rect")
-      .attr("x", xPos)
-      .attr("y", y(q3))
-      .attr("width", xGroup.bandwidth())
-      .attr("height", y(q1) - y(q3))
-      .attr("fill", group === "t" ? "#f5a623" : "#4f81bd")
-      .attr("opacity", 0.75);
-
-    // Median line
-    metricGroup.append("line")
-      .attr("x1", xPos)
-      .attr("x2", xPos + xGroup.bandwidth())
-      .attr("y1", y(q2))
-      .attr("y2", y(q2))
-      .attr("stroke", "black")
-      .attr("stroke-width", 2);
-
-    // Whiskers
-    metricGroup.append("line")
-      .attr("x1", xPos + xGroup.bandwidth() / 2)
-      .attr("x2", xPos + xGroup.bandwidth() / 2)
-      .attr("y1", y(min))
-      .attr("y2", y(max))
-      .attr("stroke", "black");
-  });
-}); // <--- end metrics.forEach
-
-// No missing or extra curly brackets!
 
 });
