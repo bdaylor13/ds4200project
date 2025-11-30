@@ -84,7 +84,10 @@ p {
 
 li, ul {
   color: #484848;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 
 hr {
     margin: 40px 0;
@@ -114,12 +117,12 @@ a {
     width: 90%;
 }
 
-/* Target the actual Vega embed elements */
+
 .chart-container > div {
     margin: 0 auto;
 }
 
-/* Text content styling */
+
 .text-content {
     width: 90%;
     margin: 30px auto;
@@ -131,5 +134,12 @@ a {
 .left-header {
   color: #00A699;
   text-align: left;
+  margin-bottom: 8px;
+}
+
+ul {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
