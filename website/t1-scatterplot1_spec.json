@@ -181,7 +181,7 @@
           2000
         ]
       },
-      "title": "Average Occupancy (Last 365 Days)",
+      "title": "Average Occupancy (l365d)",
       "type": "quantitative"
     },
     "tooltip": [
