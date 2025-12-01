@@ -29,15 +29,17 @@
         <h1 class="headers">TASK 4</h1>
         <h2 class="headers">What's the relationship between minimum nights and occupancy?</h2>
 
+        <hr>
+
         <div id="vis1" class="chart-container"></div>
 
         <div class="text-content">
-        <p><b>Design: </b>This stacked histogram displays the distribution of "Minimum Nights" settings across listings, 
-            specifically zoomed in on short-term requirements (1-15 nights). The x-axis represents the minimum nights 
-            required by the host, while the y-axis shows the number of listings. The color represents the 
-            availability level over the last 365 days, with lighter green indicating high availability (often professional listings) 
-            and dark blue indicating low availability.
-        </p>
+        <p><b>Design: </b>
+            This stacked histogram displays the distribution of "Minimum Nights" settings, 
+            specifically zoomed in on short-term requirements (1-15 nights). 
+            The color represents the availability level over the last 365 days, 
+            categorized into quartiles based on the data distribution. Lighter green indicates high availability 
+            (top 25%, often professional listings) and dark blue indicates low availability (bottom 25%).    </p>
         <p><b>Takeaways: </b>
         <ul>
             <li><b>The "1-2 Night" Standard: </b>
@@ -57,8 +59,10 @@
     <div id="vis2" class="chart-container"></div>
     
     <div class="text-content">
-        <p><b>Design: </b>This chart focuses on the distribution of listings with longer minimum stay requirements 
-            (28 to 60 nights). It highlights how regulatory definitions influence host behavior.
+        <p><b>Design: </b>Following the same visual structure, 
+            this chart shifts focus to listings with longer minimum stay requirements (28 to 60 nights), 
+            skipping the negligible 16-27 night range and excluding extreme outliers.
+            It highlights how regulatory definitions and monthly rental norms influence host behavior, distinct from the short-term market.
         </p>
         <p><b>Takeaways: </b></p>
         <ul>
