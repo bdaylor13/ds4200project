@@ -167,6 +167,9 @@
     "color": {
       "field": "neighbourhood_cleansed",
       "legend": null,
+      "scale": {
+        "scheme": "category20"
+      },
       "title": "Neighborhood",
       "type": "nominal"
     },
@@ -178,7 +181,7 @@
           2000
         ]
       },
-      "title": "Average Occupancy (Last 365 Days)",
+      "title": "Average Occupancy (l365d)",
       "type": "quantitative"
     },
     "tooltip": [
