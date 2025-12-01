@@ -167,6 +167,9 @@
     "color": {
       "field": "neighbourhood_cleansed",
       "legend": null,
+      "scale": {
+        "scheme": "category20"
+      },
       "title": "Neighborhood",
       "type": "nominal"
     },

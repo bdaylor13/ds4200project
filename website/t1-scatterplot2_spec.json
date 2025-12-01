@@ -54081,7 +54081,7 @@
     },
     "opacity": {
       "condition": {
-        "param": "param_22",
+        "param": "param_1",
         "value": 1
       },
       "value": 0
@@ -54166,7 +54166,7 @@
           "Longwood Medical Area"
         ]
       },
-      "name": "param_22",
+      "name": "param_1",
       "select": {
         "fields": [
           "neighbourhood_cleansed"
@@ -54180,7 +54180,7 @@
   "transform": [
     {
       "filter": {
-        "param": "param_22"
+        "param": "param_1"
       }
     }
   ],
