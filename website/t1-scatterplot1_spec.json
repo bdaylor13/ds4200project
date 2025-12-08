@@ -204,12 +204,12 @@
       "type": "quantitative"
     }
   },
-  "height": 600,
+  "height": 400,
   "mark": {
     "opacity": 0.8,
     "size": 200,
     "type": "circle"
   },
   "title": "Median Price vs Revenue by Neighborhood",
-  "width": "container"
+  "width": 700
 }

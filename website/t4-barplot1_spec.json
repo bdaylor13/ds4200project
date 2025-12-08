@@ -36988,7 +36988,7 @@
       "type": "quantitative"
     }
   },
-  "height": 400,
+  "height": 600,
   "mark": {
     "opacity": 0.7,
     "stroke": null,
@@ -37008,5 +37008,5 @@
     }
   ],
   "title": "Distribution of Minimum Nights by Availability Level",
-  "width": 700
+  "width": 800
 }

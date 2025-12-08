@@ -54056,12 +54056,12 @@
   "encoding": {
     "color": {
       "field": "estimated_occupancy_l365d",
-      "title": "Estimated Occupancy Rate (Last 365 days)",
+      "title": "Estimated Occupancy",
       "type": "quantitative"
     },
     "opacity": {
       "condition": {
-        "param": "param_4",
+        "param": "param_3",
         "value": 1
       },
       "value": 0
@@ -54112,7 +54112,7 @@
       "type": "quantitative"
     }
   },
-  "height": 600,
+  "height": 400,
   "mark": {
     "opacity": 0.6,
     "size": 60,
@@ -54150,7 +54150,7 @@
           "Longwood Medical Area"
         ]
       },
-      "name": "param_4",
+      "name": "param_3",
       "select": {
         "fields": [
           "neighbourhood_cleansed"
@@ -54164,9 +54164,9 @@
   "transform": [
     {
       "filter": {
-        "param": "param_4"
+        "param": "param_3"
       }
     }
   ],
-  "width": 800
+  "width": 700
 }

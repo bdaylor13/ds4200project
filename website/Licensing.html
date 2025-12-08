@@ -31,7 +31,10 @@
 
         <hr>
 
-        <div id="vis1" class="chart-container"></div>
+        <div class="chart-container">
+            <div id="vis1"></div>
+        </div>
+    
         <div class="text-content">
         <p><b>Design: </b>These side-by-side bar charts visualize the relationship between licensing status and market dynamics. 
             The left chart compares the <b>count of listings</b>, showing the proportion of licensed (1) versus unlicensed/exempt (0) properties. 
@@ -64,11 +67,9 @@
 
     </div>
 
-    <script type="text/javascript">
-    
+<script type="text/javascript">
+    // Load first chart
     fetch('t5-barplot_spec.json')
         .then(res => res.json())
-        .then(spec => vegaEmbed('#vis1', spec))
-        .catch(console.error);
-
+        .then(spec => vegaEmbed('#vis1', spec, {actions: false}));
     </script>

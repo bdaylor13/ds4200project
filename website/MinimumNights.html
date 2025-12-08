@@ -31,7 +31,10 @@
 
         <hr>
 
-        <div id="vis1" class="chart-container"></div>
+        <div class="chart-container">
+            <div id="vis1"></div>
+        </div>
+    
 
         <div class="text-content">
         <p><b>Design: </b>
@@ -56,7 +59,9 @@
 
     <h3 class="left-header">The impact of regulations on long-term stays...</h3>
 
-    <div id="vis2" class="chart-container"></div>
+    <div class="chart-container">
+            <div id="vis2"></div>
+        </div>
     
     <div class="text-content">
         <p><b>Design: </b>Following the same visual structure, 
@@ -85,11 +90,11 @@
     
     fetch('t4-barplot1_spec.json')
         .then(res => res.json())
-        .then(spec => vegaEmbed('#vis1', spec))
+        .then(spec => vegaEmbed('#vis1', spec, {actions: false}))
         .catch(console.error);
 
     fetch('t4-barplot2_spec.json')
         .then(res => res.json())
-        .then(spec => vegaEmbed('#vis2', spec))
+        .then(spec => vegaEmbed('#vis2', spec, {actions: false}))
         .catch(console.error);
     </script>

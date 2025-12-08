@@ -149,8 +149,6 @@ ul {
   margin-right: auto;
 }
 
-
-
 .chart-container .vega-embed {
     width: 100% !important;
 }
@@ -162,3 +160,4 @@ ul {
     max-width: 100%;
     height: auto;
 }
+

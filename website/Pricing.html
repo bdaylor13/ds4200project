@@ -38,13 +38,7 @@
     </div>
     
     <div class="text-content">
-        <p><b>Design: </b>This scatterplot compares the median price versus median revenue amongst
-            airbnbs in Boston grouped by their neighborhood. Each point represents a different 
-            neighboorhood, with it's color representing the average occupancy rates for airbnbs in 
-            that given neighboorhood over the last 365 days. The plot contains a hover interaction,
-            where each point contains information on the neighboorhood name, median price, median
-            revenue (l365d) and median estimated occupancy (l365d).
-
+        <p style="text-align: center;"><b>Interaction: </b>Hover over points to see information on each individual neighborhood.
         </p>
         <p><b>Takeaways: </b>
         <ul>
@@ -66,16 +60,14 @@
 
     <h3 class="left-header">Looking at the same relationship within the neighborhoods...</h3>
 
-    <div id="vis2" class="chart-container"></div>
+    <div class="chart-container">
+        <div id="vis2"></div>
+    </div>
     
     
     <div class="text-content">
-        <p><b>Design: </b>This scatterplot compares the price per night versus estimated revenue in the last 365
-            days for individual airbnb listings. A selector located at the bottom of the visual allows the user to
-            select the neighborhood to display, with all listings on the plot belonging to that selected neighborhood.
-            The color of the listing represents the estimated occupancy rate for that listing over the 
-            last 365 days, with darker colors indicating higher rates. 
-
+        <p style="text-align: center;"><b>Interaction: </b>Hover over points to see information on each individual
+            listing. Use the dropdown to select different neighborhoods.
         </p>
         <p><b>Takeaways: </b></p>
         <ul>
