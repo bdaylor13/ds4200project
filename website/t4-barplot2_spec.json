@@ -7,10 +7,10 @@
     }
   },
   "data": {
-    "name": "data-0516a934778d6cf224f99b9529b4299e"
+    "name": "data-7081b785be7ef426a3d2f34cf845e943"
   },
   "datasets": {
-    "data-0516a934778d6cf224f99b9529b4299e": [
+    "data-7081b785be7ef426a3d2f34cf845e943": [
       {
         "availability_365": 262,
         "availability_category": "High (243-321)",
@@ -791,7 +791,7 @@
         "estimated_revenue_l365d": 0.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.36674771902226,
+        "latitude": 42.366747719022264,
         "license": "Exempt: This listing is a unit used for furnished institutional or business stays",
         "longitude": -71.05288415197064,
         "minimum_nights": 29,
@@ -3783,7 +3783,7 @@
         "estimated_revenue_l365d": 84660.0,
         "has_license": 1,
         "host_is_superhost": "t",
-        "latitude": 42.36346782845416,
+        "latitude": 42.363467828454155,
         "license": "STR-595468",
         "longitude": -71.06992638078786,
         "minimum_nights": 30,
@@ -7457,7 +7457,7 @@
         "estimated_revenue_l365d": 15776.0,
         "has_license": 0,
         "host_is_superhost": "t",
-        "latitude": 42.31932786147024,
+        "latitude": 42.319327861470235,
         "license": "none",
         "longitude": -71.09013210682868,
         "minimum_nights": 29,
@@ -7985,7 +7985,7 @@
         "estimated_revenue_l365d": 108630.0,
         "has_license": 1,
         "host_is_superhost": "t",
-        "latitude": 42.31856281545896,
+        "latitude": 42.318562815458954,
         "license": "STR-518432",
         "longitude": -71.05874533662467,
         "minimum_nights": 28,
@@ -12121,7 +12121,7 @@
         "estimated_revenue_l365d": 6380.0,
         "has_license": 0,
         "host_is_superhost": "f",
-        "latitude": 42.31491819782188,
+        "latitude": 42.314918197821875,
         "license": "none",
         "longitude": -71.0556744600529,
         "minimum_nights": 29,
@@ -12473,7 +12473,7 @@
         "estimated_revenue_l365d": 0.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.34834423768135,
+        "latitude": 42.348344237681346,
         "license": "str-007936",
         "longitude": -71.04350941620852,
         "minimum_nights": 29,
@@ -13265,7 +13265,7 @@
         "estimated_revenue_l365d": 38106.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.34200880463639,
+        "latitude": 42.342008804636386,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08411850981184,
         "minimum_nights": 29,
@@ -13441,7 +13441,7 @@
         "estimated_revenue_l365d": 37995.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.3424093428968,
+        "latitude": 42.342409342896794,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08281844038515,
         "minimum_nights": 29,
@@ -13573,7 +13573,7 @@
         "estimated_revenue_l365d": 32712.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.34204961062365,
+        "latitude": 42.342049610623654,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08451058659904,
         "minimum_nights": 29,
@@ -13683,7 +13683,7 @@
         "estimated_revenue_l365d": 54825.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.34398236377668,
+        "latitude": 42.343982363776675,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08253819066451,
         "minimum_nights": 29,
@@ -14915,7 +14915,7 @@
         "estimated_revenue_l365d": 4402.0,
         "has_license": 1,
         "host_is_superhost": "t",
-        "latitude": 42.2972962717414,
+        "latitude": 42.297296271741395,
         "license": "STR-540680",
         "longitude": -71.07495618643411,
         "minimum_nights": 31,
@@ -15421,7 +15421,7 @@
         "estimated_revenue_l365d": 48450.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.34383067567055,
+        "latitude": 42.343830675670546,
         "license": "Exempt: This listing is a unit that has contracts with hospitals",
         "longitude": -71.08398188222802,
         "minimum_nights": 29,
@@ -15575,7 +15575,7 @@
         "estimated_revenue_l365d": 73695.0,
         "has_license": 1,
         "host_is_superhost": "t",
-        "latitude": 42.34391345458352,
+        "latitude": 42.343913454583515,
         "license": "Exempt: This listing is a unit used for furnished institutional or business stays",
         "longitude": -71.10071764286766,
         "minimum_nights": 29,
@@ -16125,7 +16125,7 @@
         "estimated_revenue_l365d": 0.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.33191073665216,
+        "latitude": 42.331910736652155,
         "license": "STR-522998",
         "longitude": -71.05332541426975,
         "minimum_nights": 29,
@@ -16257,7 +16257,7 @@
         "estimated_revenue_l365d": 14535.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.32226863510604,
+        "latitude": 42.322268635106035,
         "license": "STR-455882",
         "longitude": -71.05544679281388,
         "minimum_nights": 29,
@@ -16367,7 +16367,7 @@
         "estimated_revenue_l365d": 18360.0,
         "has_license": 1,
         "host_is_superhost": "t",
-        "latitude": 42.28249575017325,
+        "latitude": 42.282495750173254,
         "license": "STR-570381",
         "longitude": -71.12207324709658,
         "minimum_nights": 29,
@@ -17247,7 +17247,7 @@
         "estimated_revenue_l365d": 36000.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.34834983936472,
+        "latitude": 42.348349839364715,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.07376425733058,
         "minimum_nights": 30,
@@ -17885,7 +17885,7 @@
         "estimated_revenue_l365d": 59040.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.36020416253096,
+        "latitude": 42.360204162530955,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.05732259044957,
         "minimum_nights": 30,
@@ -17973,7 +17973,7 @@
         "estimated_revenue_l365d": 89250.0,
         "has_license": 1,
         "host_is_superhost": "f",
-        "latitude": 42.35967541976191,
+        "latitude": 42.359675419761906,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.05622219870823,
         "minimum_nights": 30,
@@ -18677,7 +18677,7 @@
         "estimated_revenue_l365d": 9280.0,
         "has_license": 0,
         "host_is_superhost": "f",
-        "latitude": 42.36034164434157,
+        "latitude": 42.360341644341574,
         "license": "none",
         "longitude": -71.06810327323089,
         "minimum_nights": 29,
@@ -19806,7 +19806,7 @@
       "type": "quantitative"
     }
   },
-  "height": 400,
+  "height": 600,
   "mark": {
     "opacity": 0.7,
     "stroke": null,
@@ -19815,7 +19815,7 @@
   "params": [
     {
       "bind": "scales",
-      "name": "param_4",
+      "name": "param_2",
       "select": {
         "encodings": [
           "x",
@@ -19826,5 +19826,5 @@
     }
   ],
   "title": "Distribution of Minimum Nights by Availability Level",
-  "width": 700
+  "width": 800
 }

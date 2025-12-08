@@ -24,8 +24,10 @@ d3.csv("cleaned_listings.csv", d3.autoType).then(data => {
 
   const scatterSvg = d3.select("#scatter")
     .append("svg")
-    .attr("width", scatterWidth + scatterMargin.left + scatterMargin.right)
-    .attr("height", scatterHeight + scatterMargin.top + scatterMargin.bottom)
+    .attr("viewBox", `0 0 ${scatterWidth + scatterMargin.left + scatterMargin.right} ${scatterHeight + scatterMargin.top + scatterMargin.bottom}`)
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .style("max-width", "100%")
+    .style("height", "auto")
     .append("g")
     .attr("transform", `translate(${scatterMargin.left},${scatterMargin.top})`);
 

@@ -7,10 +7,10 @@
     }
   },
   "data": {
-    "name": "data-483a6e5c5271598e8d6b63f2aa20b62b"
+    "name": "data-113790a2c2c879a8acac382020bffbae"
   },
   "datasets": {
-    "data-483a6e5c5271598e8d6b63f2aa20b62b": [
+    "data-113790a2c2c879a8acac382020bffbae": [
       {
         "estimated_occupancy_l365d": 147.64634146341464,
         "estimated_revenue_l365d": 18537.0,
@@ -90,12 +90,6 @@
         "price": 192.0
       },
       {
-        "estimated_occupancy_l365d": 0.0,
-        "estimated_revenue_l365d": 0.0,
-        "neighbourhood_cleansed": "Leather District",
-        "price": 165.0
-      },
-      {
         "estimated_occupancy_l365d": 83.4,
         "estimated_revenue_l365d": 11352.0,
         "neighbourhood_cleansed": "Longwood Medical Area",
@@ -165,22 +159,7 @@
   },
   "encoding": {
     "color": {
-      "field": "neighbourhood_cleansed",
-      "legend": null,
-      "scale": {
-        "scheme": "category20"
-      },
-      "title": "Neighborhood",
-      "type": "nominal"
-    },
-    "size": {
       "field": "estimated_occupancy_l365d",
-      "scale": {
-        "range": [
-          100,
-          2000
-        ]
-      },
       "title": "Average Occupancy (l365d)",
       "type": "quantitative"
     },

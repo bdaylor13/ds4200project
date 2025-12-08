@@ -1,5 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0 70px;     
 }
 nav {
     background-color: #f8f9fa;
@@ -118,6 +120,7 @@ a {
     align-items: center;
     margin: 35px auto;
     width: 90%;
+    max-width: 900px;
 }
 
 
@@ -146,3 +149,16 @@ ul {
   margin-right: auto;
 }
 
+
+
+.chart-container .vega-embed {
+    width: 100% !important;
+}
+
+
+.chart-container svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}

@@ -15,17 +15,17 @@
 <body>
         <nav>
         <ul class="nav-menu">
-            <li><a href="cover_page.html">Home</a></li>
-            <li><a href="task1.html" class="active">Task 1</a></li>
-            <li><a href="task2.html">Task 2</a></li>
-            <li><a href="task3.html">Task 3</a></li>
-            <li><a href="task4.html">Task 4</a></li>
-            <li><a href="task5.html">Task 5</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Pricing.html" class="active">Pricing</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="HostTypes.html">Host Types</a></li>
+            <li><a href="MinimumNights.html">Minimum Nights</a></li>
+            <li><a href="Licensing.html">Licensing</a></li>
             <li><a href="conclusions.html">Conclusions</a></li>
         </ul>
         </nav>
     <div>
-        <h1 class="headers">TASK 1</h1>
+        <h1 class="headers">Pricing</h1>
         <h2 class="headers">What pricing strategies lead to higher booking rates?</h2>
     </div>
 
@@ -33,12 +33,14 @@
 
     <h3 class="left-header">Exploring the relationship between pricing and revenue across neighborhoods...</h3>
 
-    <div id="vis1" class="chart-container"></div>
+    <div class="chart-container">
+        <div id="vis1"></div>
+    </div>
     
     <div class="text-content">
         <p><b>Design: </b>This scatterplot compares the median price versus median revenue amongst
-            airbnbs in Boston grouped by their neighborhood. Each point (or color) represents a different 
-            neighboorhood, with it's size representing the average occupancy rates for airbnbs in 
+            airbnbs in Boston grouped by their neighborhood. Each point represents a different 
+            neighboorhood, with it's color representing the average occupancy rates for airbnbs in 
             that given neighboorhood over the last 365 days. The plot contains a hover interaction,
             where each point contains information on the neighboorhood name, median price, median
             revenue (l365d) and median estimated occupancy (l365d).
@@ -102,10 +104,10 @@
     // Load first chart
     fetch('t1-scatterplot1_spec.json')
         .then(res => res.json())
-        .then(spec => vegaEmbed('#vis1', spec));
+        .then(spec => vegaEmbed('#vis1', spec, {actions: false}));
     
     // Load second chart
     fetch('t1-scatterplot2_spec.json')
         .then(res => res.json())
-        .then(spec => vegaEmbed('#vis2', spec));
+        .then(spec => vegaEmbed('#vis2', spec, {actions: false}));
     </script>
