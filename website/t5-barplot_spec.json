@@ -8,10 +8,10 @@
     }
   },
   "data": {
-    "name": "data-f77f0b9a0538b4cafad8f4b4d6c1b141"
+    "name": "data-490178b52c82dbbef70b6a863c169132"
   },
   "datasets": {
-    "data-f77f0b9a0538b4cafad8f4b4d6c1b141": [
+    "data-490178b52c82dbbef70b6a863c169132": [
       {
         "availability_365": 262,
         "bedrooms": 1.0,
@@ -1311,14 +1311,14 @@
         "geometry": {
           "coordinates": [
             -71.06116485595703,
-            42.359764099121094
+            42.35976409912109
           ],
           "type": "Point"
         },
         "has_license": 0,
         "host_is_superhost": "t",
         "index_right": 15,
-        "latitude": 42.359764099121094,
+        "latitude": 42.35976409912109,
         "license": "none",
         "longitude": -71.06116485595703,
         "minimum_nights": 91,
@@ -2901,14 +2901,14 @@
         "geometry": {
           "coordinates": [
             -71.05288415197064,
-            42.366747719022264
+            42.36674771902226
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 7,
-        "latitude": 42.366747719022264,
+        "latitude": 42.36674771902226,
         "license": "Exempt: This listing is a unit used for furnished institutional or business stays",
         "longitude": -71.05288415197064,
         "minimum_nights": 29,
@@ -9501,14 +9501,14 @@
         "geometry": {
           "coordinates": [
             -71.11275148532205,
-            42.321430817051755
+            42.32143081705176
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 1,
-        "latitude": 42.321430817051755,
+        "latitude": 42.32143081705176,
         "license": "STR-523050",
         "longitude": -71.11275148532205,
         "minimum_nights": 91,
@@ -11181,14 +11181,14 @@
         "geometry": {
           "coordinates": [
             -71.09195369415323,
-            42.324315539246854
+            42.32431553924685
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 8,
-        "latitude": 42.324315539246854,
+        "latitude": 42.32431553924685,
         "license": "STR-470759",
         "longitude": -71.09195369415323,
         "minimum_nights": 2,
@@ -15801,14 +15801,14 @@
         "geometry": {
           "coordinates": [
             -71.06992638078786,
-            42.363467828454155
+            42.36346782845416
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 13,
-        "latitude": 42.363467828454155,
+        "latitude": 42.36346782845416,
         "license": "STR-595468",
         "longitude": -71.06992638078786,
         "minimum_nights": 30,
@@ -16461,14 +16461,14 @@
         "geometry": {
           "coordinates": [
             -71.07929663572756,
-            42.382173634151435
+            42.38217363415144
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 12,
-        "latitude": 42.382173634151435,
+        "latitude": 42.38217363415144,
         "license": "STR-414759",
         "longitude": -71.07929663572756,
         "minimum_nights": 3,
@@ -30921,14 +30921,14 @@
         "geometry": {
           "coordinates": [
             -71.09013210682868,
-            42.319327861470235
+            42.31932786147024
           ],
           "type": "Point"
         },
         "has_license": 0,
         "host_is_superhost": "t",
         "index_right": 8,
-        "latitude": 42.319327861470235,
+        "latitude": 42.31932786147024,
         "license": "none",
         "longitude": -71.09013210682868,
         "minimum_nights": 29,
@@ -33291,14 +33291,14 @@
         "geometry": {
           "coordinates": [
             -71.05874533662467,
-            42.318562815458954
+            42.31856281545896
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 21,
-        "latitude": 42.318562815458954,
+        "latitude": 42.31856281545896,
         "license": "STR-518432",
         "longitude": -71.05874533662467,
         "minimum_nights": 28,
@@ -45771,14 +45771,14 @@
         "geometry": {
           "coordinates": [
             -71.00069295197193,
-            42.390197149246475
+            42.39019714924648
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 11,
-        "latitude": 42.390197149246475,
+        "latitude": 42.39019714924648,
         "license": "STR-566522",
         "longitude": -71.00069295197193,
         "minimum_nights": 1,
@@ -46191,14 +46191,14 @@
         "geometry": {
           "coordinates": [
             -71.16010426966892,
-            42.277853675096054
+            42.27785367509605
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 18,
-        "latitude": 42.277853675096054,
+        "latitude": 42.27785367509605,
         "license": "STR-513970",
         "longitude": -71.16010426966892,
         "minimum_nights": 1,
@@ -46611,14 +46611,14 @@
         "geometry": {
           "coordinates": [
             -71.08446960340625,
-            42.348301150228934
+            42.34830115022893
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 10,
-        "latitude": 42.348301150228934,
+        "latitude": 42.34830115022893,
         "license": "STR-520910",
         "longitude": -71.08446960340625,
         "minimum_nights": 1,
@@ -47781,14 +47781,14 @@
         "geometry": {
           "coordinates": [
             -71.0556744600529,
-            42.314918197821875
+            42.31491819782188
           ],
           "type": "Point"
         },
         "has_license": 0,
         "host_is_superhost": "f",
         "index_right": 21,
-        "latitude": 42.314918197821875,
+        "latitude": 42.31491819782188,
         "license": "none",
         "longitude": -71.0556744600529,
         "minimum_nights": 29,
@@ -49011,14 +49011,14 @@
         "geometry": {
           "coordinates": [
             -71.02861688707804,
-            42.336180098174786
+            42.33618009817479
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 23,
-        "latitude": 42.336180098174786,
+        "latitude": 42.33618009817479,
         "license": "STR-537705",
         "longitude": -71.02861688707804,
         "minimum_nights": 1,
@@ -49041,14 +49041,14 @@
         "geometry": {
           "coordinates": [
             -71.04350941620852,
-            42.348344237681346
+            42.34834423768135
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 22,
-        "latitude": 42.348344237681346,
+        "latitude": 42.34834423768135,
         "license": "str-007936",
         "longitude": -71.04350941620852,
         "minimum_nights": 29,
@@ -49311,14 +49311,14 @@
         "geometry": {
           "coordinates": [
             -71.0304134908038,
-            42.366014916445515
+            42.36601491644552
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 11,
-        "latitude": 42.366014916445515,
+        "latitude": 42.36601491644552,
         "license": "STR-528989",
         "longitude": -71.0304134908038,
         "minimum_nights": 2,
@@ -51321,14 +51321,14 @@
         "geometry": {
           "coordinates": [
             -71.08411850981184,
-            42.342008804636386
+            42.34200880463639
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 16,
-        "latitude": 42.342008804636386,
+        "latitude": 42.34200880463639,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08411850981184,
         "minimum_nights": 29,
@@ -51561,14 +51561,14 @@
         "geometry": {
           "coordinates": [
             -71.08281844038515,
-            42.342409342896794
+            42.3424093428968
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 10,
-        "latitude": 42.342409342896794,
+        "latitude": 42.3424093428968,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08281844038515,
         "minimum_nights": 29,
@@ -51981,14 +51981,14 @@
         "geometry": {
           "coordinates": [
             -71.08451058659904,
-            42.342049610623654
+            42.34204961062365
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 16,
-        "latitude": 42.342049610623654,
+        "latitude": 42.34204961062365,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08451058659904,
         "minimum_nights": 29,
@@ -52131,14 +52131,14 @@
         "geometry": {
           "coordinates": [
             -71.08253819066451,
-            42.343982363776675
+            42.34398236377668
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 10,
-        "latitude": 42.343982363776675,
+        "latitude": 42.34398236377668,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.08253819066451,
         "minimum_nights": 29,
@@ -57411,14 +57411,14 @@
         "geometry": {
           "coordinates": [
             -71.07495618643411,
-            42.297296271741395
+            42.2972962717414
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 21,
-        "latitude": 42.297296271741395,
+        "latitude": 42.2972962717414,
         "license": "STR-540680",
         "longitude": -71.07495618643411,
         "minimum_nights": 31,
@@ -58011,14 +58011,14 @@
         "geometry": {
           "coordinates": [
             -71.06469002087739,
-            42.345801787626435
+            42.34580178762644
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 9,
-        "latitude": 42.345801787626435,
+        "latitude": 42.34580178762644,
         "license": "STR-463524",
         "longitude": -71.06469002087739,
         "minimum_nights": 1,
@@ -58401,14 +58401,14 @@
         "geometry": {
           "coordinates": [
             -71.06022887408173,
-            42.324286914774305
+            42.32428691477431
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 21,
-        "latitude": 42.324286914774305,
+        "latitude": 42.32428691477431,
         "license": "STR-545055",
         "longitude": -71.06022887408173,
         "minimum_nights": 1,
@@ -59301,14 +59301,14 @@
         "geometry": {
           "coordinates": [
             -71.08398188222802,
-            42.343830675670546
+            42.34383067567055
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 10,
-        "latitude": 42.343830675670546,
+        "latitude": 42.34383067567055,
         "license": "Exempt: This listing is a unit that has contracts with hospitals",
         "longitude": -71.08398188222802,
         "minimum_nights": 29,
@@ -59511,14 +59511,14 @@
         "geometry": {
           "coordinates": [
             -71.10071764286766,
-            42.343913454583515
+            42.34391345458352
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 16,
-        "latitude": 42.343913454583515,
+        "latitude": 42.34391345458352,
         "license": "Exempt: This listing is a unit used for furnished institutional or business stays",
         "longitude": -71.10071764286766,
         "minimum_nights": 29,
@@ -60201,14 +60201,14 @@
         "geometry": {
           "coordinates": [
             -71.09736513873773,
-            42.331826631963025
+            42.33182663196303
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 2,
-        "latitude": 42.331826631963025,
+        "latitude": 42.33182663196303,
         "license": "STR-468749",
         "longitude": -71.09736513873773,
         "minimum_nights": 1,
@@ -60231,14 +60231,14 @@
         "geometry": {
           "coordinates": [
             -71.09606372223317,
-            42.328316886559094
+            42.32831688655909
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 8,
-        "latitude": 42.328316886559094,
+        "latitude": 42.32831688655909,
         "license": "STR-461707",
         "longitude": -71.09606372223317,
         "minimum_nights": 1,
@@ -60621,14 +60621,14 @@
         "geometry": {
           "coordinates": [
             -71.04369046697286,
-            42.350558867087905
+            42.35055886708791
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 22,
-        "latitude": 42.350558867087905,
+        "latitude": 42.35055886708791,
         "license": "STR-575045",
         "longitude": -71.04369046697286,
         "minimum_nights": 9,
@@ -61311,14 +61311,14 @@
         "geometry": {
           "coordinates": [
             -71.09690343279392,
-            42.317229248091635
+            42.31722924809164
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 8,
-        "latitude": 42.317229248091635,
+        "latitude": 42.31722924809164,
         "license": "STR-528277",
         "longitude": -71.09690343279392,
         "minimum_nights": 2,
@@ -62151,14 +62151,14 @@
         "geometry": {
           "coordinates": [
             -71.1604904383421,
-            42.279750221552625
+            42.27975022155263
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 18,
-        "latitude": 42.279750221552625,
+        "latitude": 42.27975022155263,
         "license": "STR-520919",
         "longitude": -71.1604904383421,
         "minimum_nights": 5,
@@ -63081,14 +63081,14 @@
         "geometry": {
           "coordinates": [
             -71.05332541426975,
-            42.331910736652155
+            42.33191073665216
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 23,
-        "latitude": 42.331910736652155,
+        "latitude": 42.33191073665216,
         "license": "STR-522998",
         "longitude": -71.05332541426975,
         "minimum_nights": 29,
@@ -63471,14 +63471,14 @@
         "geometry": {
           "coordinates": [
             -71.07862838084993,
-            42.342038621985914
+            42.34203862198592
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 9,
-        "latitude": 42.342038621985914,
+        "latitude": 42.34203862198592,
         "license": "STR-457097",
         "longitude": -71.07862838084993,
         "minimum_nights": 1,
@@ -63501,14 +63501,14 @@
         "geometry": {
           "coordinates": [
             -71.05544679281388,
-            42.322268635106035
+            42.32226863510604
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 21,
-        "latitude": 42.322268635106035,
+        "latitude": 42.32226863510604,
         "license": "STR-455882",
         "longitude": -71.05544679281388,
         "minimum_nights": 29,
@@ -63861,14 +63861,14 @@
         "geometry": {
           "coordinates": [
             -71.12207324709658,
-            42.282495750173254
+            42.28249575017325
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 0,
-        "latitude": 42.282495750173254,
+        "latitude": 42.28249575017325,
         "license": "STR-570381",
         "longitude": -71.12207324709658,
         "minimum_nights": 29,
@@ -64161,14 +64161,14 @@
         "geometry": {
           "coordinates": [
             -71.14616869948904,
-            42.348062216049414
+            42.34806221604941
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 17,
-        "latitude": 42.348062216049414,
+        "latitude": 42.34806221604941,
         "license": "STR-569349",
         "longitude": -71.14616869948904,
         "minimum_nights": 1,
@@ -65481,14 +65481,14 @@
         "geometry": {
           "coordinates": [
             -71.06891735507868,
-            42.351372109445094
+            42.35137210944509
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 15,
-        "latitude": 42.351372109445094,
+        "latitude": 42.35137210944509,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.06891735507868,
         "minimum_nights": 1,
@@ -66561,14 +66561,14 @@
         "geometry": {
           "coordinates": [
             -71.07907155774586,
-            42.341922374632915
+            42.34192237463292
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 9,
-        "latitude": 42.341922374632915,
+        "latitude": 42.34192237463292,
         "license": "str-526502",
         "longitude": -71.07907155774586,
         "minimum_nights": 1,
@@ -66921,14 +66921,14 @@
         "geometry": {
           "coordinates": [
             -71.06439709495504,
-            42.360458438448234
+            42.36045843844824
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 14,
-        "latitude": 42.360458438448234,
+        "latitude": 42.36045843844824,
         "license": "STR-415619",
         "longitude": -71.06439709495504,
         "minimum_nights": 1,
@@ -67371,14 +67371,14 @@
         "geometry": {
           "coordinates": [
             -71.0642076371811,
-            42.351128445515585
+            42.35112844551559
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 15,
-        "latitude": 42.351128445515585,
+        "latitude": 42.35112844551559,
         "license": "str-526597",
         "longitude": -71.0642076371811,
         "minimum_nights": 1,
@@ -67491,14 +67491,14 @@
         "geometry": {
           "coordinates": [
             -71.14416052533325,
-            42.346146199310795
+            42.3461461993108
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 17,
-        "latitude": 42.346146199310795,
+        "latitude": 42.3461461993108,
         "license": "STR-566366",
         "longitude": -71.14416052533325,
         "minimum_nights": 1,
@@ -67551,14 +67551,14 @@
         "geometry": {
           "coordinates": [
             -71.14493626763553,
-            42.348337107273906
+            42.34833710727391
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 17,
-        "latitude": 42.348337107273906,
+        "latitude": 42.34833710727391,
         "license": "STR-569357",
         "longitude": -71.14493626763553,
         "minimum_nights": 1,
@@ -67851,14 +67851,14 @@
         "geometry": {
           "coordinates": [
             -71.06415152549744,
-            42.344932290191075
+            42.34493229019108
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 9,
-        "latitude": 42.344932290191075,
+        "latitude": 42.34493229019108,
         "license": "Str-098345",
         "longitude": -71.06415152549744,
         "minimum_nights": 1,
@@ -67941,14 +67941,14 @@
         "geometry": {
           "coordinates": [
             -71.14712801052458,
-            42.278168833698516
+            42.27816883369852
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 18,
-        "latitude": 42.278168833698516,
+        "latitude": 42.27816883369852,
         "license": "STR-542608",
         "longitude": -71.14712801052458,
         "minimum_nights": 1,
@@ -68601,14 +68601,14 @@
         "geometry": {
           "coordinates": [
             -71.06823785685711,
-            42.322900058883235
+            42.32290005888324
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 8,
-        "latitude": 42.322900058883235,
+        "latitude": 42.32290005888324,
         "license": "STR-572992",
         "longitude": -71.06823785685711,
         "minimum_nights": 1,
@@ -68871,14 +68871,14 @@
         "geometry": {
           "coordinates": [
             -71.07126503725361,
-            42.330442566105354
+            42.33044256610536
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 8,
-        "latitude": 42.330442566105354,
+        "latitude": 42.33044256610536,
         "license": "STR-443550",
         "longitude": -71.07126503725361,
         "minimum_nights": 1,
@@ -69591,14 +69591,14 @@
         "geometry": {
           "coordinates": [
             -71.07376425733058,
-            42.348349839364715
+            42.34834983936472
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 10,
-        "latitude": 42.348349839364715,
+        "latitude": 42.34834983936472,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.07376425733058,
         "minimum_nights": 30,
@@ -69621,14 +69621,14 @@
         "geometry": {
           "coordinates": [
             -71.09379694564079,
-            42.349882181523114
+            42.34988218152312
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 16,
-        "latitude": 42.349882181523114,
+        "latitude": 42.34988218152312,
         "license": "STR-521905",
         "longitude": -71.09379694564079,
         "minimum_nights": 2,
@@ -69981,14 +69981,14 @@
         "geometry": {
           "coordinates": [
             -71.08887580555724,
-            42.344492334958915
+            42.34449233495892
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 16,
-        "latitude": 42.344492334958915,
+        "latitude": 42.34449233495892,
         "license": "STR-568786",
         "longitude": -71.08887580555724,
         "minimum_nights": 1,
@@ -71481,14 +71481,14 @@
         "geometry": {
           "coordinates": [
             -71.08908670556116,
-            42.311984493268305
+            42.31198449326831
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 8,
-        "latitude": 42.311984493268305,
+        "latitude": 42.31198449326831,
         "license": "STR-536142",
         "longitude": -71.08908670556116,
         "minimum_nights": 2,
@@ -72291,14 +72291,14 @@
         "geometry": {
           "coordinates": [
             -71.05732259044957,
-            42.360204162530955
+            42.36020416253096
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 15,
-        "latitude": 42.360204162530955,
+        "latitude": 42.36020416253096,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.05732259044957,
         "minimum_nights": 30,
@@ -72651,14 +72651,14 @@
         "geometry": {
           "coordinates": [
             -71.05622219870823,
-            42.359675419761906
+            42.35967541976191
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 15,
-        "latitude": 42.359675419761906,
+        "latitude": 42.35967541976191,
         "license": "Exempt: This listing is a hotel or motel",
         "longitude": -71.05622219870823,
         "minimum_nights": 30,
@@ -73251,14 +73251,14 @@
         "geometry": {
           "coordinates": [
             -71.0749917522336,
-            42.314733553774225
+            42.31473355377423
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 8,
-        "latitude": 42.314733553774225,
+        "latitude": 42.31473355377423,
         "license": "STR-518832",
         "longitude": -71.0749917522336,
         "minimum_nights": 1,
@@ -73461,14 +73461,14 @@
         "geometry": {
           "coordinates": [
             -71.10165757313948,
-            42.341419451052424
+            42.34141945105242
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 16,
-        "latitude": 42.341419451052424,
+        "latitude": 42.34141945105242,
         "license": "STR-561975",
         "longitude": -71.10165757313948,
         "minimum_nights": 1,
@@ -74781,14 +74781,14 @@
         "geometry": {
           "coordinates": [
             -71.06810327323089,
-            42.360341644341574
+            42.36034164434157
           ],
           "type": "Point"
         },
         "has_license": 0,
         "host_is_superhost": "f",
         "index_right": 14,
-        "latitude": 42.360341644341574,
+        "latitude": 42.36034164434157,
         "license": "none",
         "longitude": -71.06810327323089,
         "minimum_nights": 29,
@@ -75021,14 +75021,14 @@
         "geometry": {
           "coordinates": [
             -71.15691548109525,
-            42.357576776394865
+            42.35757677639487
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 17,
-        "latitude": 42.357576776394865,
+        "latitude": 42.35757677639487,
         "license": "str-544976",
         "longitude": -71.15691548109525,
         "minimum_nights": 1,
@@ -77541,14 +77541,14 @@
         "geometry": {
           "coordinates": [
             -71.10942587256432,
-            42.321406122668954
+            42.32140612266896
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 1,
-        "latitude": 42.321406122668954,
+        "latitude": 42.32140612266896,
         "license": "STR-589481",
         "longitude": -71.10942587256432,
         "minimum_nights": 1,
@@ -77721,14 +77721,14 @@
         "geometry": {
           "coordinates": [
             -71.14430066524149,
-            42.290968870887994
+            42.290968870888
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 18,
-        "latitude": 42.290968870887994,
+        "latitude": 42.290968870888,
         "license": "STR-589938",
         "longitude": -71.14430066524149,
         "minimum_nights": 2,
@@ -78531,14 +78531,14 @@
         "geometry": {
           "coordinates": [
             -71.13887632698363,
-            42.348589426742635
+            42.34858942674264
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 24,
-        "latitude": 42.348589426742635,
+        "latitude": 42.34858942674264,
         "license": "str-589617",
         "longitude": -71.13887632698363,
         "minimum_nights": 1,
@@ -78951,14 +78951,14 @@
         "geometry": {
           "coordinates": [
             -71.06526229138109,
-            42.352066632834294
+            42.35206663283429
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 15,
-        "latitude": 42.352066632834294,
+        "latitude": 42.35206663283429,
         "license": "STR-523178",
         "longitude": -71.06526229138109,
         "minimum_nights": 1,
@@ -79011,14 +79011,14 @@
         "geometry": {
           "coordinates": [
             -71.07076696146733,
-            42.308784225859114
+            42.30878422585912
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 21,
-        "latitude": 42.308784225859114,
+        "latitude": 42.30878422585912,
         "license": "STR-588864",
         "longitude": -71.07076696146733,
         "minimum_nights": 2,
@@ -80091,14 +80091,14 @@
         "geometry": {
           "coordinates": [
             -71.06407230440463,
-            42.350903921514984
+            42.35090392151498
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "f",
         "index_right": 15,
-        "latitude": 42.350903921514984,
+        "latitude": 42.35090392151498,
         "license": "STR-521178",
         "longitude": -71.06407230440463,
         "minimum_nights": 1,
@@ -80271,14 +80271,14 @@
         "geometry": {
           "coordinates": [
             -71.05853522659245,
-            42.378378561916115
+            42.37837856191612
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 12,
-        "latitude": 42.378378561916115,
+        "latitude": 42.37837856191612,
         "license": "STR-589941",
         "longitude": -71.05853522659245,
         "minimum_nights": 1,
@@ -81771,14 +81771,14 @@
         "geometry": {
           "coordinates": [
             -71.07300583420749,
-            42.275629376894074
+            42.27562937689408
           ],
           "type": "Point"
         },
         "has_license": 1,
         "host_is_superhost": "t",
         "index_right": 20,
-        "latitude": 42.275629376894074,
+        "latitude": 42.27562937689408,
         "license": "STR-582837",
         "longitude": -71.07300583420749,
         "minimum_nights": 1,
@@ -82147,10 +82147,6 @@
         },
         "tooltip": [
           {
-            "field": "has_license",
-            "type": "nominal"
-          },
-          {
             "aggregate": "count",
             "type": "quantitative"
           }
@@ -82173,12 +82169,12 @@
       "mark": {
         "type": "bar"
       },
-      "name": "view_33",
+      "name": "view_9",
       "title": "Licensed vs Unlicensed (Count)",
       "transform": [
         {
           "filter": {
-            "param": "param_28"
+            "param": "param_10"
           }
         }
       ],
@@ -82204,17 +82200,6 @@
           "title": "License Status",
           "type": "nominal"
         },
-        "tooltip": [
-          {
-            "field": "has_license",
-            "type": "nominal"
-          },
-          {
-            "aggregate": "mean",
-            "field": "price",
-            "type": "quantitative"
-          }
-        ],
         "x": {
           "axis": {
             "labelExpr": "datum.value == 1 ? 'Licensed' : 'Unlicensed'"
@@ -82224,22 +82209,21 @@
           "type": "nominal"
         },
         "y": {
-          "aggregate": "mean",
           "field": "price",
-          "title": "Average Price",
+          "title": "Price",
           "type": "quantitative"
         }
       },
       "height": 450,
       "mark": {
-        "type": "bar"
+        "outliers": false,
+        "type": "boxplot"
       },
-      "name": "view_34",
-      "title": "Licensed vs Unlicensed (Average Price)",
+      "title": "Licensed vs Unlicensed (Price)",
       "transform": [
         {
           "filter": {
-            "param": "param_28"
+            "param": "param_10"
           }
         }
       ],
@@ -82279,7 +82263,7 @@
           "Allston",
           "Harbor Islands"
         ],
-        "name": "Neighbor: ",
+        "name": "Neighborhood: ",
         "options": [
           null,
           "Roslindale",
@@ -82310,7 +82294,7 @@
           "Harbor Islands"
         ]
       },
-      "name": "param_28",
+      "name": "param_10",
       "select": {
         "fields": [
           "neighbourhood"
@@ -82318,8 +82302,7 @@
         "type": "point"
       },
       "views": [
-        "view_33",
-        "view_34"
+        "view_9"
       ]
     }
   ]

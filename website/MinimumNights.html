@@ -37,8 +37,8 @@
     
 
         <div class="text-content">
-        <p style="text-align: center;"><b>Interaction: </b>***PLACE INTERACTIONS DESCRIPTION HERE***
-        <p><b>Takeaways: </b>
+        <p style="text-align: center;"><b>Interaction: </b>Hover over bars to see details for each level.
+        </p><b>Takeaways: </b>
         <ul>
             <li><b>The "1-2 Night" Standard: </b>
             The overwhelming majority of listings set their minimum stay to just 1 or 2 nights. This suggests that 
@@ -46,23 +46,6 @@
             <li><b>Avoidance of the "Middle Ground":</b>
             There is a significant drop-off in listings requiring 4 to 14 nights. This duration is often too long 
             for tourists yet too short for temporary residents, making it a less attractive strategy for hosts.</li>
-        </ul>
-        </p>
-    </div>
-
-    <hr class="short-hr">
-
-    <h3 class="left-header">The impact of regulations on long-term stays...</h3>
-
-    <div class="chart-container">
-            <div id="vis2"></div>
-        </div>
-    
-    <div class="text-content">
-        <p style="text-align: center;"><b>Interaction: </b>Hover over points to see information on each individual neighborhood.
-        </p>
-        <p><b>Takeaways: </b></p>
-        <ul>
             <li><b>The "30-Night" Regulatory Wall:</b><br>
             A massive spike is visible exactly at the 30-night mark. This is a direct response to Boston's 
             short-term rental regulations. By requiring a minimum of 30 days, hosts can bypass strict "under 28 days" 
@@ -74,8 +57,6 @@
         </ul>
 
     </div>
-
-        <div id="vis2" class="chart-container"></div>
     </div>
 
     <script type="text/javascript">
@@ -85,8 +66,4 @@
         .then(spec => vegaEmbed('#vis1', spec, {actions: false}))
         .catch(console.error);
 
-    fetch('t4-barplot2_spec.json')
-        .then(res => res.json())
-        .then(spec => vegaEmbed('#vis2', spec, {actions: false}))
-        .catch(console.error);
     </script>
